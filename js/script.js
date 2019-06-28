@@ -17,6 +17,5 @@ $(document).ready(function() {
   setMenuHeight();
   $(window).on("resize", function() {
     setMenuHeight();
-    console.log("adjusted");
   });
 });

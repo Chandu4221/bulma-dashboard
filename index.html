@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bulma Admin Dashboard</title>
     <link rel="stylesheet" href="css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar is-primary is-fixed-top">
+    <nav class="navbar is-fixed-top box-shadow-y">
       <div class="navbar-brand">
         <a
           role="button"
@@ -36,7 +42,19 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu has-background-primary">
+      <div class="navbar-menu has-background-white">
+        <div class="navbar-start">
+          <a href="#" class="navbar-item">
+            <i class="fas fa-home icon"></i> Home
+          </a>
+          <a href="#" class="navbar-item">
+            About
+          </a>
+          <a href="#" class="navbar-item">
+            Features
+          </a>
+          <a href="#" class="navbar-item">Pricing</a>
+        </div>
         <div class="navbar-end">
           <a href="#" class="navbar-item">
             Notifications
@@ -61,41 +79,68 @@
     <div class="columns is-variable is-0">
       <div class="">
         <!-- sidebar -->
-        <div class="menu-container px-1 has-background-primary">
+        <div class="menu-container px-1 has-background-white">
           <div class="menu-wrapper py-1">
             <aside class="menu">
-              <p class="menu-label has-text-light">General</p>
-              <ul class="menu-list">
-                <li><a href="#" class="has-text-black">Dashboard</a></li>
-              </ul>
-              <p class="menu-label has-text-light">Administration</p>
+              <p class="menu-label has-text-lighter">General</p>
               <ul class="menu-list">
                 <li>
-                  <a href="#" class="is-active has-background-black"
-                    >Settings</a
+                  <a href="#" class="has-text-black">
+                    <i class="fas fa-tachometer-alt icon"></i>
+                    Dashboard</a
+                  >
+                </li>
+              </ul>
+              <p class="menu-label has-text-lighter">Administration</p>
+              <ul class="menu-list">
+                <li>
+                  <a href="#" class="is-active has-background-primary">
+                    <i class="fas fa-cogs icon"></i>
+                    Settings</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="has-text-black">Manage Your Team</a>
+                  <a href="#" class="has-text-black">
+                    <i class="fas fa-users-cog icon"></i>
+                    Manage Your Team</a
+                  >
                   <ul>
-                    <li><a href="#" class="has-text-black">Members</a></li>
                     <li>
-                      <a href="#" class="has-text-black">Add New Member</a>
+                      <a href="#" class="has-text-black">
+                        <i class="fas fa-users icon"></i>
+                        Members</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="has-text-black">
+                        <i class="fas fa-user-plus icon"></i>
+                        Add New Member</a
+                      >
                     </li>
                   </ul>
                 </li>
               </ul>
-              <p class="menu-label has-text-light">Other</p>
+              <p class="menu-label has-text-lighter">Other</p>
               <ul class="menu-list">
-                <li><a href="#" class="has-text-black">Chats</a></li>
-                <li><a href="#" class="has-text-black">Extras</a></li>
+                <li>
+                  <a href="#" class="has-text-black">
+                    <i class="fas fa-comments icon"></i>
+                    Chats</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="has-text-black">
+                    <i class="fas fa-info-circle icon"></i>
+                    Extras</a
+                  >
+                </li>
               </ul>
             </aside>
           </div>
         </div>
       </div>
       <div class="column is-10-desktop is-offset-2-desktop is-12-mobile ">
-        <div class="px-1">
+        <div class="p-1">
           <div class="columns is-variable is-desktop">
             <div class="column">
               <h1 class="title">
